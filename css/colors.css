@@ -1,0 +1,35 @@
+/* ---------- Color Module Styles ----------- */
+
+
+body{
+  font-family: sans-serif;
+  background: var(--primary);
+  color:var(--dark)
+}
+.navbar{
+  background: var(--info);
+}
+.button{
+  background: var(--danger);
+  border-color: var(--danger);
+}
+a.page-link{
+background: var(--danger);
+}
+.page-link:active{
+  background: var(--danger);
+}
+
+.pagination .page-item .page-link
+{
+  background-color: var(--danger);
+  color:var(--warning);
+  border: 0;
+}
+li a.page-link{
+  color:var(--light);
+}
+
+.active > .page-link, .page-link.active{
+  background-color: var(--warning);
+}
