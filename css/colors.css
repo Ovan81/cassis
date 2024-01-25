@@ -6,24 +6,18 @@ body{
   background: var(--primary);
   color:var(--dark)
 }
-.navbar{
+.navbar, .site-footer{
   background: var(--info);
 }
 .button{
   background: var(--danger);
   border-color: var(--danger);
 }
-a.page-link{
-background: var(--danger);
-}
-.page-link:active{
-  background: var(--danger);
-}
+
 
 .pagination .page-item .page-link
 {
   background-color: var(--danger);
-  color:var(--warning);
   border: 0;
 }
 li a.page-link{
@@ -32,4 +26,13 @@ li a.page-link{
 
 .active > .page-link, .page-link.active{
   background-color: var(--warning);
+}
+.form-search.form-control{
+  background: var(--light);
+}
+a.nav-link.nav-link--user, a.nav-link.nav-link--user-logout{
+color:var(--light)
+}
+a.nav-link.nav-link--user:hover, a.nav-link.nav-link--user-logout:hover{
+text-decoration: underline;
 }

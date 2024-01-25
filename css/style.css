@@ -1,4 +1,13 @@
-/**
- * @file
- * Subtheme specific CSS.
- */
+ 
+.row main section .block .content .views-element-container .contextual-region .view-content{
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+.views-row .node{
+height:100%;
+}
+@media (width >= 992px){
+    .row main section .block .content .views-element-container .contextual-region .view-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
