@@ -72,8 +72,6 @@
     'clearfix',
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
-  <header>
     {{ title_prefix }}
     {% if label and not page %}
       <h2{{ title_attributes.addClass('node__title') }}>
@@ -85,15 +83,8 @@
       <div class="node__meta">
         {{ author_picture }}
         {% block submitted %}
-          <em{{ author_attributes }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-          </em>
         {% endblock %}
         {{ metadata }}
       </div>
     {% endif %}
-  </header>
-  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
-  </div>
-</article>

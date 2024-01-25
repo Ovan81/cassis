@@ -3,11 +3,19 @@
     display: grid;
     grid-template-columns: 1fr; 
 }
-.views-row .node{
-height:100%;
+
+.row main section .block .content .views-element-container .contextual-region .view-content > .views-row{
+display: grid;
+grid-row: span 5;
+grid-column: span 1;
+grid-template-rows: subgrid;
+grid-template-columns: subgrid;
+height: 100%;
 }
+
+
 @media (width >= 992px){
     .row main section .block .content .views-element-container .contextual-region .view-content{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
