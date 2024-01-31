@@ -1,21 +1,55 @@
  
-.row main section .block .content .views-element-container .contextual-region .view-content{
+.view-content.row{
     display: grid;
     grid-template-columns: 1fr; 
+    gap:1rem;
+}
+.layout-main-wrapper{
+    padding-top: 1em;
 }
 
-.row main section .block .content .views-element-container .contextual-region .view-content > .views-row{
+
+.view-content > .views-row{
 display: grid;
 grid-row: span 5;
 grid-column: span 1;
 grid-template-rows: subgrid;
 grid-template-columns: subgrid;
 height: 100%;
+gap:0;
 }
 
+h2.node__title, div.field.field--name-field-image.field--type-image.field--label-hidden.field__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.content nav{
+    padding-top:1em;
+}
+skip-nav {
+    display: inline;
+    float: right;
+    top: 1em;
+    margin: 0;
+    line-height: 1;
+  }
+  #skip-nav a {
+    font-weight: bold;
+    padding: 1px;
+  }
+  #skip-nav a:link, #skip-nav a:visited {
+    position: relative;
+    top: -300px;
+  }
+  #skip-nav a:hover, #skip-nav a:active, #skip-nav a:focus {
+    position: relative;
+    top: 0;
+    text-decoration: none;
+  }
 
 @media (width >= 992px){
-    .row main section .block .content .views-element-container .contextual-region .view-content{
+    .view-content.row{
         grid-template-columns: repeat(4, 1fr);
     }
 }

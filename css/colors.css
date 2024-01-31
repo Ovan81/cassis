@@ -14,25 +14,36 @@ body{
   border-color: var(--danger);
 }
 
-
+.view-content > .views-row{
+  background:var(--info);
+}
+h2.node__title span{
+  color: var(--light);
+}
 .pagination .page-item .page-link
 {
   background-color: var(--danger);
   border: 0;
 }
 li a.page-link{
+  color:var(--dark);
+}
+a.page-link.active{
   color:var(--light);
 }
 
-.active > .page-link, .page-link.active{
-  background-color: var(--warning);
-}
+
 .form-search.form-control{
   background: var(--light);
 }
-a.nav-link.nav-link--user, a.nav-link.nav-link--user-logout{
+a.nav-link.nav-link--user, a.nav-link.nav-link--user-logout, .nav-link--user-login{
 color:var(--light)
 }
 a.nav-link.nav-link--user:hover, a.nav-link.nav-link--user-logout:hover{
 text-decoration: underline;
+}
+#skip-nav a:hover, #skip-nav a:active, #skip-nav a:focus{
+  color:var(--light);
+  background: var(--primary);
+  
 }
