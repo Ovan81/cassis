@@ -18,7 +18,10 @@ grid-template-columns: subgrid;
 height: 100%;
 gap:0;
 }
-
+img.img-fluid.d-inline-block.align-top {
+    scale: 3;
+    padding-left: 2em;
+}
 h2.node__title, div.field.field--name-field-image.field--type-image.field--label-hidden.field__item{
     display: flex;
     align-items: center;
