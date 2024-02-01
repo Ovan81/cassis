@@ -15,7 +15,8 @@ body{
 }
 
 .view-content > .views-row{
-  background:var(--info);
+  background:var(--secondary);
+  border-radius: 5px;
 }
 h2.node__title span{
   color: var(--light);

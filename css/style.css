@@ -25,7 +25,7 @@ h2.node__title, div.field.field--name-field-image.field--type-image.field--label
     justify-content: center;
 }
 div.content nav{
-    padding-top:1em;
+    padding-top:0em;
 }
 skip-nav {
     display: inline;
