@@ -73,42 +73,30 @@
 {% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
 
 {% block head %}
-       
-       
- 
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form float-right">
-                  {{ page.top_header_form }}
-                </div>
-              {% endif %}
-          {% if container_navbar %}
-          </div>
-          {% endif %}
-        <nav{{ navbar_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-            {{ page.header }}
-            {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+          
+        <nav class="navbar navbar-expand-sm w-100 bg-info">
+        <div class="container-fluid w-100">
+            <div class="row justify-content-between w-100">
+             <div class="pb-2 col-auto d-flex align-items-center mr-auto">
+                {{ page.top_header }}
+              </div>
+              <div class="col-auto d-none d-sm-block">
                 {{ page.primary_menu }}
-                {% if page.header_form %}
-                  <div class="form-inline navbar-form float-right">
-                    {{ page.header_form }}
-                  </div>
-                {% endif %}
-	          </div>
-            {% endif %}
-            {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-            {% endif %}
-          {% if container_navbar %}
+              </div>
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-info p-4">
+                  {{ page.primary_menu }}
+                </div>
+              </div>
+                  <button class=" navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+ 
+            </div>
           </div>
-          {% endif %}
         </nav>
+        
+        
 {% endblock %}
 
 {% block content %}

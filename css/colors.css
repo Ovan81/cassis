@@ -4,12 +4,12 @@
 body{
   font-family: sans-serif;
   background: var(--primary);
-  color:var(--dark)
+  color: var(--dark)
 }
 .navbar, .site-footer{
   background: var(--info);
 }
-.button{
+.button, .button:hover{
   background: var(--danger);
   border-color: var(--danger);
 }
@@ -18,8 +18,11 @@ body{
   background:var(--secondary);
   border-radius: 5px;
 }
-h2.node__title span{
-  color: var(--light);
+a.page-link:hover{
+  color:var(--dark);
+}
+img{
+  color:var(--dark);
 }
 .pagination .page-item .page-link
 {
@@ -47,4 +50,8 @@ text-decoration: underline;
   color:var(--light);
   background: var(--primary);
   
+}
+span.page-link{
+  color:var(--dark) !important;
+  text-decoration:underline;
 }
