@@ -66,7 +66,7 @@
  * @see template_preprocess_page()
  * @see bootstrap_barrio_preprocess_page()
  * @see html.html.twig
- */
+ */  
 #}
 {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
 {% set sidebar_first_exists = page.sidebar_first|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
@@ -75,9 +75,9 @@
 {% block head %}
           
         <nav class="navbar navbar-expand-sm w-100 bg-info">
-        <div class="container-fluid w-100">
-            <div class="row justify-content-between w-100">
-             <div class="pb-2 col-auto d-flex align-items-center mr-auto">
+        <div class="container-fluid w-100 justify-content-center">
+            <div class="row justify-content-center w-100">
+             <div class="pb-2 col-auto d-flex align-items-center justify-content-center">
                 {{ page.top_header }}
               </div>
               <div class="col-auto d-none d-sm-block">
